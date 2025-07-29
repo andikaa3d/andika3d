@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<img src="IMG/LOGO.jpg">
+  <meta charset="UTF-8">
+  <title>ANDIKA 3D</title>
+  <style>
+    body {
+      background-color: #d0eaff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #2a2a2a;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #333;
+      margin: 20px auto;
+      max-width: 600px;
+    }
+
+    .botones-principales button {
+      margin: 10px;
+      padding: 15px 25px;
+      font-size: 1em;
+      background-color: #008CBA;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .redes-sociales img, .metodo-pago img {
+      width: 40px;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    .seccion {
+      display: none;
+      margin-top: 20px;
+    }
+
+    .seccion img {
+      width: 300px;
+      border-radius: 15px;
+      margin: 10px;
+    }
+
+    .descripcion {
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    .precio {
+      font-size: 1.3em;
+      color: #004aad;
+      margin: 10px 0;
+    }
+
+    .medidas, .material {
+      font-size: 1em;
+      color: #444;
+      margin-bottom: 5px;
+    }
+
+    .comprar-btn {
+      background-color: #28a745;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    .comprar-btn:hover {
+      background-color: #218838;
+    }
+
+    .metodo-pago {
+      margin-top: 30px;
+    }
+
+    .metodo-pago p {
+      font-size: 1em;
+      color: #333;
+    }
+
+    .metodo-pago img {
+      width: 80px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>ANDIKA 3D</h1>
+  <p>✨ Esculturas personalizadas de tu mascota, hechas con amor y detalle. ¡Un homenaje inolvidable para tu mejor amigo peludo! ✨</p>
+
+  <div class="redes-sociales">
+    <a href="https:www.facebook.com/share/1UtKqaWPSL/?mibextid=wwXIfrhttps" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook">
+    </a>
+    <a href="https://wa.me/3136794799" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+    </a>
+  </div>
+
+  <div class="botones-principales">
+    <button onclick="mostrarSeccion('megapet')">MEGAPET</button>
+    <button onclick="mostrarSeccion('furrypet')">FURRYPET</button>
+    <button onclick="mostrarSeccion('minipet')">MINIPET</button>
+    <button onclick="mostrarSeccion('retrato3d')">RETRATO3D</button>
+  </div>
+
+  <!-- MEGAPET -->
+  <div id="megapet" class="seccion">
+    <img src="IMG/mega.jfif" alt="MEGAPET">
+    <p class="descripcion">🐶 MEGAPET: Escultura de tamaño real con alas y aureola. ¡Perfecta para recordar a tu ángel peludo con cariño eterno!</p>
+    <CENTER><p class="precio">$250.000 COP</p></CENTER>
+    <p class="medidas">Altura: 20CM 30CM 40CM 50CM 60CM</p>
+    <p class="material">Material: Resina premium con acabado artesanal</p>
+    <a href="https://wa.me/3136794799?text=Hola%2C%20quiero%20comprar%20una%20MEGAPET" class="comprar-btn" target="_blank">Comprar</a>
+  </div>
+
+  <!-- FURRYPET -->
+  <div id="furrypet" class="seccion">
+    <img src="IMG/FURRY.jfif" alt="FURRYPET">
+    <p class="descripcion">🐕 FURRYPET: Captura su ternura con textura realista. Ideal para peluditos como "Princesa". ¡Tan suave como en vida!</p>
+    <CENTER><p class="precio">$250.000 COP</p></CENTER>
+    <p class="medidas">Altura: 20 cm | Ancho: 15 cm</p>
+    <p class="material">Material: Resina con textura de pelo + pintura acrílica</p>
+    <a href="https://wa.me/3136794799?text=Hola%2C%20quiero%20comprar%20una%20FURRYPET" class="comprar-btn" target="_blank">Comprar</a>
+  </div>
+
+  <!-- MINIPET -->
+  <div id="minipet" class="seccion">
+    <img src="IMG/MINI.jfif" alt="MINIPET">
+    <p class="descripcion">🦴 MINIPET: Mini escultura de tu mascota favorita. Detalles pintados a mano como "Kira". ¡Pequeño pero con gran corazón!</p>
+    <CENTER><p class="precio">$180.000 COP</p></CENTER>
+    <p class="medidas">Altura: 12 cm | Ancho: 8 cm</p>
+    <p class="material">Material: Impresión 3D con pintura personalizada</p>
+    <a href="https://wa.me/3136794799?text=Hola%2C%20quiero%20comprar%20una%20MINIPET" class="comprar-btn" target="_blank">Comprar</a>
+  </div>
+
+  <!-- RETRATO3D -->
+  <div id="retrato3d" class="seccion">
+    <img src="IMG/RETRATO.jfif" alt="RETRATO3D">
+    <p class="descripcion">🖼️ RETRATO 3D: Busto enmarcado con realismo impresionante como "Doby". ¡Ideal para colgar en casa con orgullo!</p>
+    <CENTER><p class="precio">$200.000 COP</p></CENTER>
+    <p class="medidas">Altura: 17 cm | Ancho: 14 cm</p>
+    <p class="material">Material: Marco de madera + resina pintada a mano</p>
+    <a href="https://wa.me/3136794799?text=Hola%2C%20quiero%20comprar%20un%20RETRATO%203D" class="comprar-btn" target="_blank">Comprar</a>
+  </div>
+
+  <!-- MÉTODO DE PAGO -->
+  <div class="metodo-pago">
+    <p>✅ Aceptamos pagos vía Nequi</p>
+    <a href="https://www.nequi.com.co" target="_blank">
+     
+    <img src="IMG/ne.webp" alt="Nequi">
+</a>
+  </div>
+
+  <script>
+    function mostrarSeccion(id) {
+      const secciones = document.querySelectorAll('.seccion');
+      secciones.forEach(seccion => seccion.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
